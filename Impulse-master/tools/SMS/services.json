@@ -1,0 +1,24 @@
+{
+	"services": [
+		{
+            "url": "https://youla.ru/web-api/auth/request_code",
+            "data": "{'phone': '%phone%'}"
+        },
+{
+            "url": "https://www.icq.com/smsreg/requestPhoneValidation.php",
+            "data": "{'msisdn': '%phone%', 'locale': 'en', 'countryCode': 'ru','version': '1', 'k': 'ic1rtwz1s1Hj1O0r', 'r': '46763'}"
+        },
+{
+            "url": "https://cloud.mail.ru/api/v2/notify/applink",
+            "json": "{'phone': '+%phone%', 'api': 2, 'email': 'email','x-email': 'x-email'}"
+        },
+{
+            "url": "https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
+            "data": "{'st.r.phone': '+%phone%'}"
+        },
+{
+                        "url": "https://mobile-api.qiwi.com/oauth/authorize",
+                        "data": "{'response_type': 'urn:qiwi:oauth:response-type:confirmation-id', 'username': '%phone%', 'client_id': 'android-qw', 'client_secret': 'zAm4FKq9UnSe7id'}"
+        }
+	]
+}
